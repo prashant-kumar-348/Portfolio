@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survive</title>
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <header class="project-header">
+                <h1 class="project-title">SUDDEN</h1>
+                <div class="project-tags">
+                    <span class="tag">Unreal Engine</span>
+                    <span class="tag">Blender</span>
+                    <span class="tag">Blueprint</span>
+                </div>
+            </header>
+
+            <div class="project-media">
+                <img src="Screenshot 2025-11-06 172305.png" alt="Star Wars Spaceship" />
+            </div>
+
+            <div style="display:flex; gap:20px; justify-content:center; padding-bottom: 50px;">
+
+                <video style="width:500px; border-radius:20px;" autoplay muted loop playsinline>
+                    <source src="HorrorGame.mp4" type="video/mp4">
+                </video>
+
+                <video style="width:500px; border-radius:20px;" autoplay muted loop playsinline>
+                    <source src="HorrorGame   2025-12-11 22-20-38_1.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <div class="project-content">
+                <section class="overview">
+                    <h2>Project Overview</h2>
+                    <p>This is a first-person survival-horror game where the player is trapped inside a dark, hostile
+                        environment while being hunted by a terrifying monster. The primary goal of the game is to
+                        locate the monster’s own weapon, a special item that spawns randomly in different areas of the
+                        map. This weapon is the only way to kill the monster and escape the environment. Until the
+                        player finds it, they must rely on stealth, exploration, and awareness to stay alive.</p>
+                </section>
+
+                <section class="responsibilities">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li>Developed the entire game independently using Unreal Engine 5 Blueprints.</li>
+                        <li>Designed all core gameplay systems including player movement, interaction, survival
+                            mechanics, and enemy logic.</li>
+                        <li>Created the complete level design, lighting, environment setup, and horror atmosphere.</li>
+                        <li>Built the full UI system—main menu, instructions, game over, and victory screens.</li>
+                        <li>Integrated all audio, including ambient sounds, monster audio cues, and weapon sounds.</li>
+                        <li>Implemented and tested all game features, fixed bugs, and optimized overall experience.</li>
+                    </ul>
+                </section>
+
+
+
+                <section class="technical-details">
+                    <h2>Technical Implementation</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3>AI Systems</h3>
+                            <ul>
+                                <li>Built the monster’s complete AI behavior using Blueprints.</li>
+                                <li>Implemented patrol, chase, search, and attack states for realistic enemy movement.
+                                </li>
+                                <li>Used NavMesh-based pathfinding for smooth navigation throughout the level.</li>
+                                <li>Created random patrol logic to make monster behavior unpredictable.</li>
+                                <li>Designed the AI to respond dynamically to player actions and environment.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Weapon Framework </h3>
+                            <ul>
+                                <li>Implemented a random weapon spawn system, placing the monster’s weapon at different
+                                    locations every playthrough.</li>
+                                <li>Built the pickup system, allowing the player to collect and equip the weapon.</li>
+                                <li>Created the logic where only the monster’s own weapon can kill it, adding unique
+                                    gameplay challenge.</li>
+                                <li>Added UI prompts and interaction feedback for weapon pickup.</li>
+                                <li>Integrated sound and visual effects when the weapon is found or used.</li>
+                                <li>Developed the final kill mechanic, ending the game once the monster is defeated.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Performance</h3>
+                            <ul>
+                                <li>Optimized all Blueprints to reduce unnecessary logic and improve execution speed.
+                                </li>
+                                <li>Improved AI performance by minimizing Tick usage and using events where possible.
+                                </li>
+                                <li>Reduced heavy operations like traces and perception checks for smoother gameplay.
+                                </li>
+                                <li>Cleaned unused assets, optimized collision, and reduced texture sizes where needed.
+                                </li>
+                                <li>Performed multiple tests to ensure stable performance and responsive gameplay.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-links">
+                    <h2>Links & Resources</h2>
+                    <div class="links-grid">
+                        <a href="https://drive.google.com/uc?export=download&id=1zGatg31UA0TRtZH8qzhg9_KnnnGVoaLL
+" class="project-link">
+                            <i class="fas fa-play"></i>
+                            Play Demo
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

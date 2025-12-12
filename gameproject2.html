@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survive</title>
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <header class="project-header">
+                <h1 class="project-title">Hostage X</h1>
+                <p class="project-subtitle">Gameplay Programmer • 2025</p>
+                <div class="project-tags">
+                    <span class="tag">Unreal Engine</span>
+                    <span class="tag">Blender</span>
+                    <span class="tag">Blueprint</span>
+                </div>
+            </header>
+
+            <div class="project-media">
+                <img src="Untitled design.png" alt="Star Wars Spaceship" />
+            </div>
+
+            <div style="display:flex; gap:20px; justify-content:center; padding-bottom: 50px;">
+
+                <video style="width:950px; border-radius:20px;" autoplay muted loop playsinline>
+                    <source src="FPShooting (64-bit Development PCD3D_SM6)  2025-11-29 21-45-03_2.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <div class="project-content">
+                <section class="overview">
+                    <h2>Project Overview</h2>
+                    <p>This project is a first-person shooter (FPS) game developed in Unreal Engine 5 using Blueprints.
+                        The game centers around a tense hostage-rescue scenario inside a terrorist-occupied house. A
+                        hostage is locked inside a secured room, and the key required to unlock the door spawns at a
+                        random location in the environment each time the game begins. The player must explore the house,
+                        eliminate all terrorists, and locate the randomly generated key to free the hostage and complete
+                        the mission.
+                        The gameplay combines fast-paced combat, AI-driven enemy behavior, and environmental
+                        exploration, creating a dynamic and replayable experience.</p>
+                </section>
+
+                <section class="responsibilities">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li><b>Game design & core mechanics</b> – Designed the hostage-rescue concept, random key
+                            system, and
+                            mission structure.</li>
+                        <li><b>Blueprint scripting </b>– Implemented all gameplay logic, player systems, AI behavior,
+                            damage
+                            systems, HUD updates, and win/lose conditions using Unreal Engine Blueprints.</li>
+                        <li><b>Level design </b>– Created and arranged the interior environment, room layouts, item
+                            placements,
+                            and enemy positions.</li>
+                        <li><b>AI design </b>– Built enemy movement, detection, patrol, and combat behaviors using
+                            blueprint
+                            logic.</li>
+                        <li><b>Combat systems </b>– Implemented weapon mechanics, firing logic, damage calculation, and
+                            enemy
+                            reactions.</li>
+                        <li><b>UI/HUD </b>– Created player health display, key notification, mission updates, and
+                            end-game
+                            screens.</li>
+                        <li><b>Testing & optimization </b>– Balanced enemy difficulty, improved performance, and ensured
+                            smooth
+                            gameplay flow.</li>
+                        <li>Implemented a timed health regeneration system where the player regains health after
+                                avoiding damage for a short period.</li>
+                    </ul>
+                </section>
+
+
+
+                <section class="technical-details">
+                    <h2>Technical Implementation</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3>AI Systems</h3>
+                            <ul>
+                                <li><b>Enemy Patrol System:</b>
+                                    Terrorists patrol predefined paths or hold defensive positions inside the house.
+                                </li>
+                                <li><b>Detection & Combat Behavior:</b>
+                                    Enemies detect the player based on line-of-sight and distance checks.
+                                    Once engaged, they chase and shoot at the player using Blueprint logic.
+                                    Enemies stop, aim, and fire with adjustable accuracy and firing intervals.
+                                </li>
+                                <li><b>Damage & Death Handling:</b>
+                                    Enemies react to hits, take damage, and die with proper animations and cleanup
+                                    events.
+                                    Kill count updates automatically to check end-game conditions.</li>
+                                <li><b>Behavior Implementation:</b>
+                                    Built entirely using Blueprints, behavior trees, and Unreal’s AI Controller system.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Weapon Framework </h3>
+                            <ul>
+                                <li><b>Player Weapon:</b>
+                                    Implemented hitscan shooting (line trace) for bullets.
+                                    Added muzzle flash, firing sound, and impact effects.
+                                    Blueprint-controlled ammo, firing rate, and recoil behavior.</li>
+                                <li><b>Damage System:</b>
+                                    Line trace detects enemy hit → applies damage event.
+                                    Enemies and player both use health variables and death triggers.</li>
+                                <li><b>Interaction:</b>
+                                    Shooting interacts with destructible or interactive objects when needed.</li>
+                                <li>Added a player health regeneration mechanic that activates after a configurable
+                                    delay once the player stops taking damage.</li>
+                                <li>Implemented smooth gradual healing using timers and event-driven Blueprint logic.
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Performance</h3>
+                            <ul>
+                                <li>Optimized Blueprints by reducing unnecessary tick functions.
+                                </li>
+                                <li>Used event-driven systems for AI, key spawn, and door interactions.
+                                </li>
+                                <li>Simplified collision settings to minimize physics and CPU load.
+                                </li>
+                                <li>LODs (Level of Detail) used for props to maintain good framerate.
+                                </li>
+                                <li>Cleaned unused references and improved Blueprint organization for faster runtime.
+                                </li>
+                                <li>Ensured smooth movement for AI and stable FPS during combat sequences.</li>
+                                <li>Optimized health regeneration using timers instead of Tick to avoid unnecessary
+                                    performance overhead.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
