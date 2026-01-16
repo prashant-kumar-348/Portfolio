@@ -263,3 +263,16 @@ body {
         justify-content: center;
     }
 }
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-width: 950px;   /* keeps it nice on large screens */
+    height: auto;
+    border-radius: 20px;
+}
