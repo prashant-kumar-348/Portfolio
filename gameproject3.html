@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survive</title>
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <header class="project-header">
+                <h1 class="project-title">Mini Hero</h1>
+                <div class="project-tags">
+                    <span class="tag">Unreal Engine</span>
+                    <span class="tag">Blueprint</span>
+                </div>
+            </header>
+
+            <div class="project-media">
+                <img src="Game_2D Preview [NetMode_ Standalone 0]  (64-bit_PC D3D SM6) 1_14_2026 8_33_17 PM.png" alt="Star Wars Spaceship" />
+            </div>
+
+            <div style="display:flex; gap:20px; justify-content:center; padding-bottom: 50px;">
+
+                <video style="width:950px; border-radius:20px;" autoplay muted loop playsinline>
+                    <source src="Game_2D (64-bit Development PCD3D_SM6)  2026-01-13 16-51-55.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div style="display:flex; gap:20px; justify-content:center; padding-bottom: 50px;">
+
+                <video style="width:950px; border-radius:20px;" autoplay muted loop playsinline>
+                    <source src="Game_2D Preview [NetMode_ Standalone 0]  (64-bit_PC D3D SM6) 2026-01-14 22-42-13_1_1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="project-content">
+                <section class="overview">
+                    <h2>Project Overview</h2>
+                    <p>A 2D pixel-art action platformer where players progress through handcrafted levels while avoiding deadly traps and defeating hostile enemies.The game focuses on tight controls, responsive combat, and increasing difficulty, offering a classic retro experience with modern gameplay polish.Each level introduces new challenges such as moving hazards, enemy attack, and precision jumps, encouraging players to learn, adapt, and master the mechanics.</p>
+                </section>
+
+                <section class="responsibilities">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li>Designed and developed the entire game independently.</li>
+                        <li>Implemented player movement, combat, and health systems.</li>
+                        <li>Created enemy behavior logic and attack mechanics.</li>
+                        <li>Designed level layouts, traps, and progression flow.</li>
+                        <li>Built UI elements (health, menus, controls).</li>
+                        <li>Optimized performance for smooth gameplay on low-end systems.</li>
+                        <li>Debugged collision, animation, and input issues.</li>
+                        <li>Handled game logic, assets integration, and testing.</li>
+                    </ul>
+                </section>
+
+
+
+                <section class="technical-details">
+                    <h2>Technical Implementation</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3>AI Systems</h3>
+                            <ul>
+                                <b style="font-size: 20px;">State-Based Enemy AI :</b>
+                                <li>Implemented a structured AI system with clearly defined states including Idle, Patrol, Chase, Attack, and Death.
+                                </li>
+                                <b style="font-size: 20px;">Enemy Patrol & Positioning :</b>
+                                <li>Enemies patrol predefined paths or hold defensive positions to create varied and dynamic encounters.
+                                </li>
+                                <b style="font-size: 20px;">Detection & Combat Behavior :</b>
+                                <li>Enemies detect the player using proximity checks and line-of-sight detection.
+                                </li>
+                                <li>Once engaged, enemies transition into chase and attack behaviors with controlled movement and targeting.
+                                </li>
+                                <b style="font-size: 20px;">Attack Logic & Balance :</b>
+                                <li>Used attack cooldowns and damage timers to ensure fair, balanced, and predictable combat.
+                                </li>
+                                <li>Enemies stop, aim, and attack with configurable accuracy and attack intervals.
+                                </li>
+                                <b style="font-size: 20px;">Damage & Death Handling :</b>
+                                <li>Enemies react to player attacks, take damage, and trigger death sequences.
+                                </li>
+                                <li>Death handling includes animation playback, collision disabling, memory cleanup, and kill-count updates for level completion checks.
+                                </li>
+                                <b style="font-size: 20px;">Behavior Implementation:</b>
+                                <li>Built entirely using Blueprint logic, AI Controllers, and event-driven systems, ensuring maintainability and scalability.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Weapon Framework </h3>
+                            <ul>
+                                <b style="font-size: 20px;">Modular Weapon System :</b>
+                                <li>Designed a flexible and extendable weapon framework that supports multiple attack types.
+                                </li>
+                                <b style="font-size: 20px;">Melee Combat Implementation :</b>
+                                <li>Implemented melee attacks with accurate hit detection using collision and overlap events.
+                                </li>
+                                <b style="font-size: 20px;">Damage System :</b>
+                                <li>Damage is applied through event-based collision detection and health reduction logic.
+                                </li>
+                                <li>Both enemies and the player share a common health and death system.
+                                </li>
+                                <b style="font-size: 20px;">Animation Synchronization :</b>
+                                <li>Attack animations are precisely synced with damage frames to improve combat feedback.
+                                </li>
+                                <b style="font-size: 20px;">Extensibility :</b>
+                                <li>Framework is easily extendable to support new weapons, abilities, and power-ups.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Performance & Optimization</h3>
+                            <ul>
+                                <b style="font-size: 20px;">Blueprint Optimization :</b>
+                                <li>Reduced unnecessary Tick usage and shifted logic to event-driven execution.
+                                </li>
+                                <b style="font-size: 20px;">AI & Collision Efficiency :</b>
+                                <li>Optimized collision checks and AI evaluations for smoother gameplay.
+                                </li>
+                                <b style="font-size: 20px;">Rendering Optimization :</b>
+                                <li>Used lightweight pixel sprites and efficient animations to reduce rendering overhead.
+                                </li>
+                                <b style="font-size: 20px;">Gameplay Area Optimization :</b>
+                                <li>Limited enemy logic execution to active gameplay zones only.
+                                </li>
+                                <b style="font-size: 20px;">Memory Management :</b>
+                                <li>Ensured proper cleanup of enemies after death to avoid memory leaks.
+                                </li>
+                                <b style="font-size: 20px;">Frame Rate Stability :</b>
+                                <li>Maintained consistent and stable frame rates across all levels, even during combat-heavy sequences.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="project-links">
+                    <h2>Links & Resources</h2>
+                    <div class="links-grid">
+                        <a href="https://prashantk.itch.io/mini-hero" class="project-link">
+                            <i class="fas fa-play"></i>
+                            Play Demo
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
