@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapzo</title>
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <header class="project-header">
+                <h1 class="project-title">Lapzo</h1>
+                <div class="project-tags">
+                    <span class="tag">Unreal Engine</span>
+                    <span class="tag">Blueprint</span>
+                </div>
+            </header>
+
+            <div class="project-media">
+                <img src="Lapzo.png" alt="Lapzo" />
+            </div>
+
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source src="CarRacing2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source
+                        src="CarRacing3.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source
+                        src="CarRacing.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+
+            <div class="project-content">
+                <section class="overview">
+                    <h2>Project Overview</h2>
+                    <p>Lapzo is a 3D car racing game developed using Unreal Engine 5, focused on vehicle handling,
+                        AI-driven racing, and core gameplay systems.
+
+                        The game features car selection, AI opponents, lap-based progression, and a custom-designed
+                        track with interactive elements like speed boosters. It emphasizes smooth controls, structured
+                        game flow, and a complete playable racing experience.</p>
+                </section>
+
+                <section class="responsibilities">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li>Designed and developed the complete game independently.</li>
+                        <li>Implemented vehicle movement, handling, and suspension systems.</li>
+                        <li>Developed AI-controlled opponent cars with racing behavior.</li>
+                        <li>Built a car selection system for player interaction.</li>
+                        <li>Designed and optimized the race track layout.</li>
+                        <li>Implemented lap counting and race progression systems.</li>
+                        <li>Created a complete main menu system for game navigation.</li>
+                        <li>Integrated gameplay elements like speed boosters.</li>
+                        <li>Handled debugging, testing, and system integration.</li>
+                    </ul>
+                </section>
+
+
+
+                <section class="technical-details">
+                    <h2>Technical Implementation</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3>AI Systems</h3>
+                            <ul>
+                                <b style="font-size: 20px;">AI Racing Behavior :</b>
+                                <li>Implemented AI-controlled cars capable of competing with the player using structured
+                                    racing logic.</li>
+
+                                <b style="font-size: 20px;">Path Following & Navigation :</b>
+                                <li>AI vehicles follow predefined waypoints to navigate the track efficiently and
+                                    maintain smooth racing flow.</li>
+
+                                <b style="font-size: 20px;">Track Interaction :</b>
+                                <li>AI responds to track elements such as turns and speed boost zones while maintaining
+                                    controlled movement.</li>
+
+                                <b style="font-size: 20px;">Race Logic & Balancing :</b>
+                                <li>Integrated lap tracking and tuned AI speed, acceleration, and behavior for fair and
+                                    competitive gameplay.</li>
+
+                                <b style="font-size: 20px;">Behavior Implementation :</b>
+                                <li>Built using Blueprint scripting and event-driven systems for scalability and
+                                    maintainability.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-item">
+                            <h3>Vehicle System</h3>
+                            <ul>
+                                <b style="font-size: 20px;">Vehicle Physics & Movement :</b>
+                                <li>Implemented realistic vehicle movement using Unreal Engine’s vehicle physics system,
+                                    focusing on acceleration, braking, and steering.</li>
+
+                                <b style="font-size: 20px;">Suspension & Handling :</b>
+                                <li>Configured suspension settings to ensure stability across the track and smooth
+                                    driving experience.</li>
+
+                                <b style="font-size: 20px;">Input & Control System :</b>
+                                <li>Designed responsive player input handling for precise and consistent vehicle
+                                    control.</li>
+
+                                <b style="font-size: 20px;">Gameplay Integration :</b>
+                                <li>Integrated vehicle mechanics with lap counting, speed boosters, and overall race
+                                    systems.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-item">
+                            <h3>Performance & Optimization</h3>
+                            <ul>
+                                <b style="font-size: 20px;">Blueprint Optimization :</b>
+                                <li>Reduced unnecessary Tick usage by shifting logic to event-driven execution.</li>
+
+                                <b style="font-size: 20px;">AI & Physics Efficiency :</b>
+                                <li>Optimized AI updates and vehicle physics calculations for smoother gameplay.</li>
+
+                                <b style="font-size: 20px;">Collision Optimization :</b>
+                                <li>Refined collision handling to prevent glitches and improve gameplay stability.</li>
+
+                                <b style="font-size: 20px;">Gameplay Area Optimization :</b>
+                                <li>Ensured efficient execution of systems during active gameplay.</li>
+
+                                <b style="font-size: 20px;">Frame Rate Stability :</b>
+                                <li>Maintained consistent performance during races with multiple AI cars.</li>
+                            </ul>
+                        </div>
+                </section>
+                <section class="project-links">
+                    <h2>Links & Resources</h2>
+                    <div class="links-grid">
+                        <a href="https://prashantk.itch.io/lapzo" class="project-link">
+                            <i class="fas fa-play"></i>
+                            Play Demo
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
